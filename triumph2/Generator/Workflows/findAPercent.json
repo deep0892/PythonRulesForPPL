@@ -1,0 +1,19 @@
+{
+  "workflowName":"findAPercent",
+  "bu":"tech",
+  "version":"0",
+  "developer":"sanket",
+  "rules":[{
+		"operator":"feature",
+		"operands":[
+				{"type":"feature","tag":"APercent"},
+				{"type":"feature","tag":"ModelGrade"},
+				{"type":"feature","tag":"Grade"}				
+			],
+		"index":"0",
+		"depth":"0",
+		"nextRuleIndex":"None",
+		"trueRuleIndex":"None",
+		"falseRuleIndex":"None"		
+	}]
+}

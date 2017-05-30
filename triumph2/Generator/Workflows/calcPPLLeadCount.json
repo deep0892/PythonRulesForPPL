@@ -1,0 +1,28 @@
+{
+     "workflowName":"calcPPLLeadCount",
+     "bu":"tech",
+     "version":"0",
+     "developer":"sanket",
+     "rules":[{
+                   "operator":"product",
+                   "operands":[
+                                  {"type":"feature","tag":"MaxLeadsPPLCount"},
+                                  {"type":"operation",
+                                   "subRule":[{
+						 "operator":"subRule",
+						 "operands":[{"type":"literal","tag":"findAPercent"}],
+						 "index":"0",
+						 "depth":"2",
+						 "trueRuleIndex":"None",
+						 "falseRuleIndex":"None",
+						 "nextRuleIndex":"None"
+                                             }]
+				   }
+                             ],				                             
+                  "index":"0",
+                  "depth":"0",
+                  "nextRuleIndex":"None",
+                  "trueRuleIndex":"None",
+                  "falseRuleIndex":"None"
+          }]
+}

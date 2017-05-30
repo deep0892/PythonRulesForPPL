@@ -1,0 +1,1 @@
+{"hasRevenue": {"queryString": "select count(*) from ", "type": "LEAD"}, "isSameCustomer": {"type": "LEAD", "queryString": "select count(*) :)"}}

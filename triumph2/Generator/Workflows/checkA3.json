@@ -1,0 +1,31 @@
+{
+  "workflowName":"checkA3",
+  "bu":"tech",
+  "version":"0",
+  "developer":"sanket",
+  "rules":[{
+                "operator":"lt",
+                "operands":[{
+                                "type":"feature",
+                                "tag":"l3count"
+                        },{
+                                "type":"operation",
+                                "subRule":[{
+                                                "operator":"subRule",
+                                                "operands":[{"type":"literal","tag":"calcPPLLeadCount"}],
+                                                "index":"0",
+                                                "depth":"1",
+                                                "trueRuleIndex":"None",
+                                                "falseRuleIndex":"None",
+                                                "nextRuleIndex":"None"
+                                        }]
+                        }],
+                "index":"0",
+                "depth":"1",
+                "trueRuleIndex":"None",
+                "falseRuleIndex":"None",
+                "nextRuleIndex":"None"
+
+        }]
+}
+                            

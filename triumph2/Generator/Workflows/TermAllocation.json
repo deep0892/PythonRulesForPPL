@@ -1,0 +1,219 @@
+{
+	"workflowName": "termAllocation",
+	"bu": "tech",
+	"version": "0",
+	"developer": "sanket",
+	"rules": [{
+		"operator": "equals",
+		"operands": [{
+			"type": "feature",
+			"tag": "isSameCustomer"
+		},{
+			"type": "literal",
+			"tag": "True"
+		}],
+		"index": "0",
+		"depth": "0",
+		"trueRuleIndex": "1",
+		"falseRuleIndex": "2",
+		"nextRuleIndex":"None"
+	},{
+		"operator": "subRule",
+		"operands": [{
+			"type": "literal",
+			"tag": "assignToSameCustomer"
+		}],
+		"index": "1",
+		"depth": "0",
+		"trueRuleIndex": "None",
+		"falseRuleIndex": "None",
+		"nextRuleIndex": "None"
+	}, {
+		"operator": "loop",
+		"operands": [{"type":"var","tag":"agents"}],
+		"preutil":{"util":"sort","data":{"type":"var","tag":"agents"},"key":[{"tag":"L1Count","order":"ASC"},{"tag":"L2Count","order":"DESC"}]},
+		"postutil":"None",
+		"index": "2",
+		"depth": "0",
+		"trueRuleIndex": "None",
+		"falseRuleIndex": "None",
+		"nextRuleIndex": "3"
+	}, {
+		"operator": "equals",
+		"operands": [{
+			"type": "feature",
+			"tag": "isL1"
+		}, {
+			"type": "literal",
+			"tag": "True"
+		}],
+		"index": "3",
+		"depth": "1",
+		"trueRuleIndex": "6",
+		"falseRuleIndex": "4"
+	}, {
+		"operator": "subRule",
+		"operands": [{
+			"type": "literal",
+			"tag": "checkA1"
+		}],
+		"index": "6",
+		"depth": "2",
+		"trueRuleIndex": "15",
+		"falseRuleIndex": "7",
+		"nextRuleIndex": "None"
+	}, {
+		"operator": "subRule",
+		"operands": [{
+			"type": "literal",
+			"tag": "checkA2"
+		}],
+		"index": "7",
+		"depth": "2",
+		"trueRuleIndex": "16",
+		"falseRuleIndex": "8",
+		"nextRuleIndex": "None"
+	}, {
+		"operator": "subRule",
+		"operands": [{
+			"type": "literal",
+			"tag": "checkA3"
+		}],
+		"index": "8",
+		"depth": "2",
+		"trueRuleIndex": "17",
+		"falseRuleIndex": "9",
+		"nextRuleIndex": "None"
+	}, {
+		"operator": "equals",
+		"operands": [{
+			"type": "feature",
+			"tag": "isL2"
+		}, {
+			"type": "literal",
+			"tag": "True"
+		}],
+		"index": "4",
+		"depth": "1",
+		"trueRuleIndex": "6",
+		"falseRuleIndex": "5"
+	}, {
+		"operator": "subRule",
+		"operands": [{
+			"type": "literal",
+			"tag": "checkA2"
+		}],
+		"index": "9",
+		"depth": "2",
+		"trueRuleIndex": "16",
+		"falseRuleIndex": "10",
+		"nextRuleIndex": "None"
+	}, {
+		"operator": "subRule",
+		"operands": [{
+			"type": "literal",
+			"tag": "checkA1"
+		}],
+		"index": "10",
+		"depth": "2",
+		"trueRuleIndex": "15",
+		"falseRuleIndex": "11",
+		"nextRuleIndex": "None"
+	}, {
+		"operator": "subRule",
+		"operands": [{
+			"type": "literal",
+			"tag": "checkA3"
+		}],
+		"index": "11",
+		"depth": "2",
+		"trueRuleIndex": "17",
+		"falseRuleIndex": "4",
+		"nextRuleIndex": "None"
+	}, {
+		"operator": "equals",
+		"operands": [{
+			"type": "feature",
+			"tag": "isL3"
+		}, {
+			"type": "literal",
+			"tag": "True"
+		}],
+		"index": "5",
+		"depth": "1",
+		"trueRuleIndex": "12",
+		"falseRuleIndex": "None"
+	}, {
+		"operator": "subRule",
+		"operands": [{
+			"type": "literal",
+			"tag": "checkA3"
+		}],
+		"index": "12",
+		"depth": "2",
+		"trueRuleIndex": "17",
+		"falseRuleIndex": "13",
+		"nextRuleIndex": "None"
+	}, {
+		"operator": "subRule",
+		"operands": [{
+			"type": "literal",
+			"tag": "checkA1"
+		}],
+		"index": "13",
+		"depth": "2",
+		"trueRuleIndex": "15",
+		"falseRuleIndex": "14",
+		"nextRuleIndex": "None"
+	}, {
+		"operator": "subRule",
+		"operands": [{
+			"type": "literal",
+			"tag": "checkA2"
+		}],
+		"index": "14",
+		"depth": "2",
+		"trueRuleIndex": "16",
+		"falseRuleIndex": "None",
+		"nextRuleIndex": "None"
+	}, {
+		"operator": "subRule",
+		"preutil":"None",
+		"postutil":"None",
+		"operands": [{
+			"type": "literal",
+			"tag": "assignA1"
+		}],
+		"index": "15",
+		"depth": "0",
+		"trueRuleIndex": "None",
+		"falseRuleIndex": "None",
+		"nextRuleIndex": "None"
+	}, {
+		"operator": "subRule",
+		"preutil":"None",
+		"postutil":"None",
+		"operands": [{
+			"type": "literal",
+			"tag": "assignA2"
+		}],
+		"index": "16",
+		"depth": "0",
+		"trueRuleIndex": "None",
+		"falseRuleIndex": "None",
+		"nextRuleIndex": "None"
+	}, {
+		"operator": "subRule",
+		"preutil":"None",
+		"postutil":"None",
+		"operands": [{
+			"type": "literal",
+			"tag": "assignA3"
+		}],
+		"index": "17",
+		"depth": "0",
+		"trueRuleIndex": "None",
+		"falseRuleIndex": "None",
+		"nextRuleIndex": "None"
+	}]
+}
